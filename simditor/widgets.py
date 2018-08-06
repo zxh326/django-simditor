@@ -143,7 +143,7 @@ class SimditorWidget(forms.Textarea):
             attrs.update(extra_attrs)
         return attrs
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, **kwargs):
         if value is None:
             value = ''
         final_attrs = self.build_attrs(self.attrs, attrs, name=name)
